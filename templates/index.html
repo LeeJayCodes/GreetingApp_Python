@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/main.css')}}">
+    <title>Greetings!</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="image_container">
+            <img src="../static/city.jpg" alt="image of city">
+            <form action="greet" method="post">
+                {% for message in get_flashed_messages()%}
+                    <p>{{message}}</p>
+                {% endfor %}
+                <input type="text" name="name">
+                <input type="submit" value="Greet!" id="greet">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

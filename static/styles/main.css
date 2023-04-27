@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+html{
+    font-family: 'Sigmar', cursive, Arial, sans-serif;
+}
+
+body{
+    background-image: url(../city.jpg);
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.wrapper {
+    position: fixed;
+    min-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image_container{
+    position: relative;
+    width: 100%;
+}
+
+img {
+    margin: auto;
+    width: 50%;
+    display: block;
+    filter: blur(5px);
+    border-radius: 3rem;
+
+}
+
+form{
+    position: absolute;
+    color: white;
+    border-radius: 1rem;
+    background-color: rgba(35,35,35,0.7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+input {
+    padding: 1rem;
+    border: 0;
+    outline: none;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.5);
+}
+
+#greet {
+    font-weight: bold;
+}
